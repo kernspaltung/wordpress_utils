@@ -5,8 +5,8 @@
 #
 # Author: Michael Conigliaro <mike [at] conigliaro [dot] org>
 #
-WP_OWNER=furenku # <-- wordpress owner
-WP_GROUP=web # <-- wordpress group
+WP_OWNER=www-data # <-- wordpress owner
+WP_GROUP=www-data # <-- wordpress group
 WP_ROOT=$1 # <-- wordpress root directory
 WS_GROUP=www-data # <-- webserver group
 
