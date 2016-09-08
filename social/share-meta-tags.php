@@ -6,16 +6,17 @@ $name = get_bloginfo('name');
 
 $description = "...";
 $url = get_bloginfo('url');
-$thumb_url = "http://image.source/";
+$image = "http://image.source/";
 $date = '';
 $time = '';
 
 if( is_singular() ) {
 
+   $name = $name . " | " . get_the_title();
    $description = get_the_excerpt();
    $url = get_the_permalink( get_the_ID() );
    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumbnail_size' );   $thumb_url = $thumb[0];
-
+   $image = $thumb[0];
 }
 
 ?>
