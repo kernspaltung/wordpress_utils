@@ -71,7 +71,7 @@ function most_viewed_render( $atts ) {
 
 
    $popularposts = new WP_Query( array(
-      'post_type' => get_post_types(),
+      'post_type' => array('post'),
       'posts_per_page' => $num_posts,
       'meta_key' => 'wu_post_views_count',
       'orderby' => 'meta_value_num',
